@@ -1,5 +1,6 @@
 .rows
-  - 20.times.each do
+  .pull-left.dropzone-previews
+  - @base_images.each do |img|
     .col-xs-4
-      = image_tag "/uploads/captioned_images/test.jpg"
+      = image_tag img.image.url
 

@@ -13,4 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require_tree .
+//= require dropzone
+
+Dropzone.options.newBaseImage = {
+  previewsContainer: ".dropzone-previews"
+}
