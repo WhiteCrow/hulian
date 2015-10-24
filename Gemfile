@@ -9,6 +9,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'awesome_print', require: 'ap'
 # Profiler
 gem 'rack-mini-profiler'
+gem 'carrierwave'
 group :development, :test do
   gem 'byebug'
 end
@@ -26,6 +27,7 @@ gem 'high_voltage'
 gem 'pg'
 gem 'simple_form'
 gem 'slim-rails'
+gem 'rmagick', require: false
 group :development do
   gem 'better_errors'
   gem 'capistrano', '~> 3.0.1'

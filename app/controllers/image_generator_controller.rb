@@ -1,0 +1,2 @@
+class ImageGeneratorController < ApplicationController
+end
