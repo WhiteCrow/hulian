@@ -1,4 +1,4 @@
-ChaptonArray = [
+CaptionArray = [
   ["后退，我要开始装逼了"],
   ["喂120吗", "我太帅了睡不着咋整"],
   ["不约，叔叔我们不约"],
@@ -17,12 +17,12 @@ ChaptonArray = [
   ["每个人的心里", "都有一个反坦克火箭炮"],
 ]
 
-ChaptonArray.each do |arr|
+CaptionArray.each do |arr|
   Caption.create!(line1: arr[0], line2: arr[1])
 end
 
 Dir.foreach('tmp/assets') do |item|
-  next if item == '.' || item == '..'
+  next if item == '.' || item == '..' || item == '.DS_Store'
   base_image = BaseImage.new
   base_image.image = File.open('tmp/assets/' + item)
   base_image.save!
