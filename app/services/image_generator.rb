@@ -11,7 +11,7 @@ class ImageGenerator
 
     draw.annotate(img, 512, 512, 256, 450, text) do
       self.font = 'public/uploads/SimHei.ttf'
-      self.pointsize = 48
+      self.pointsize = 45
       #self.font_weight = Magick::NormalWeight
       self.font_weight = Magick::BoldWeight
       self.fill = 'black'
@@ -19,7 +19,7 @@ class ImageGenerator
       self.stroke = "white"
     end
 
-    img.write('public/uploads/images/test.jpg')
+    img.write('public/uploads/captioned_images/test.jpg')
   end
 
 end
