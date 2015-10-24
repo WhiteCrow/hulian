@@ -16,5 +16,10 @@
 //= require dropzone
 
 Dropzone.options.newBaseImage = {
-  previewsContainer: ".dropzone-previews"
+  previewsContainer: ".dropzone-previews",
+  thumbnailWidth: '512',
+  thumbnailHeight: '512',
+  complete: function() {
+    $(".dropzone-previews").removeClass('hidden');
+  }
 }

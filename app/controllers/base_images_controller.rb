@@ -4,6 +4,11 @@ class BaseImagesController < ApplicationController
   end
 
   def create
-    binding.pry
+    @base_image = BaseImage.create!(image: params[:file])
+    render :text => :success
+  end
+
+  def show
+    @base_image = BaseImage.find(params[:id])
   end
 end

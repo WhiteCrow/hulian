@@ -64,3 +64,9 @@ html,body {
   padding: 15px;
   font-size: 30px;
 }
+
+.dz-image-preview{
+  div:not(.dz-image){
+    display: none;
+  }
+}
