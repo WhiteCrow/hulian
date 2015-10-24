@@ -81,3 +81,5 @@ pickle-email-*.html
 .powenv
 
 .ruby-version
+
+public/uploads
