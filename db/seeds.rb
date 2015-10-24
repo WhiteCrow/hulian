@@ -18,5 +18,5 @@ ChaptonArray = [
 ]
 
 ChaptonArray.each do |arr|
-  Chapton.create!(line1: arr[0], line2: arr[1])
+  Caption.create!(line1: arr[0], line2: arr[1])
 end
