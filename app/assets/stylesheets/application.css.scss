@@ -47,3 +47,20 @@ html,body {
 .pd-footer{
   height: 60px
 }
+
+.center{
+  text-align: center;
+  .logo{
+    display: inline-block;
+    float: none;
+  }
+}
+.imgbox{
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer-icon{
+  padding: 15px;
+  font-size: 30px;
+}

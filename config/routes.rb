@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users
 
+  resources :base_images
+  resources :captioned_images
   resources :images, only: [:show, :index] do
     get :generate, on: :collection
   end

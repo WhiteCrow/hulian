@@ -1,1 +1,16 @@
+= image_tag '/uploads/captioned_images/test.jpg', class: 'img-circle pull-left',
+  style: "width: 100px; height: 100px;z-index: 99;position: absolute;bottom: 5px;"
 #footer
+
+  - if current_page?(root_path)
+    .pull-right
+      = link_to base_images_path do
+        .glyphicon.glyphicon-plus.footer-icon
+
+  - elsif current_page?(base_images_path)
+    .pull-right
+      = link_to :back do
+        .glyphicon.glyphicon-picture.footer-icon
+      = link_to :back do
+        .glyphicon.glyphicon-arrow-left.footer-icon
+
