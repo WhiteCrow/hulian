@@ -2,14 +2,15 @@ require "rmagick"
 
 class ImageGenerator < ActiveRecord::Base
   def self.generate(image_url, text)
-    img=Magick::Image.read(image_url).first
+    img = Magick::Image.read(image_url).first
     #canvas = Magick::Image.new(350, 350)
 
     draw = Magick::Draw.new
-    draw.annotate(img, 350, 350, 10, 10, text) do
-      self.gravity = Magick::CenterGravity
-      self.font = 'public/uploads/font-1.ttf'
-      self.pointsize = 33
+    draw.align = Magick::CenterAlign
+
+    draw.annotate(img, 512, 512, 256, 450, text) do
+      self.font = 'public/uploads/SimHei.ttf'
+      self.pointsize = 48
       #self.font_weight = Magick::NormalWeight
       self.font_weight = Magick::BoldWeight
       self.fill = 'black'
