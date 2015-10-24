@@ -20,3 +20,10 @@ ChaptonArray = [
 ChaptonArray.each do |arr|
   Caption.create!(line1: arr[0], line2: arr[1])
 end
+
+Dir.foreach('tmp/assets') do |item|
+  next if item == '.' || item == '..'
+  base_image = BaseImage.new
+  base_image.image = File.open('tmp/assets/' + item)
+  base_image.save!
+end
