@@ -1,6 +1,7 @@
 require "rmagick"
 
-class ImageGenerator < ActiveRecord::Base
+class ImageGenerator
+
   def self.generate(image_url, text)
     img = Magick::Image.read(image_url).first
     #canvas = Magick::Image.new(350, 350)
@@ -18,12 +19,7 @@ class ImageGenerator < ActiveRecord::Base
       self.stroke = "white"
     end
 
-    # result_image = canvas.to_blob { self.format = 'gif' }
     img.write('public/uploads/images/test.jpg')
   end
 
-  private
-
-  def self.image(image_url)
-  end
 end
