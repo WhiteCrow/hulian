@@ -11,6 +11,7 @@ html
   body
     header
       == render 'layouts/navigation'
-    main[role="main"]
       == render 'layouts/messages'
+    .pd-header
       == yield
+    = render "layouts/footer"

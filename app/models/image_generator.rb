@@ -9,12 +9,12 @@ class ImageGenerator < ActiveRecord::Base
     draw.annotate(img, 350, 350, 10, 10, text) do
       self.gravity = Magick::CenterGravity
       self.font = 'public/uploads/font-1.ttf'
-      self.pointsize = 30
+      self.pointsize = 33
       #self.font_weight = Magick::NormalWeight
       self.font_weight = Magick::BoldWeight
-      self.fill = 'white'
+      self.fill = 'black'
       self.gravity = Magick::SouthEastGravity
-      #self.stroke = "white"
+      self.stroke = "white"
     end
 
     # result_image = canvas.to_blob { self.format = 'gif' }

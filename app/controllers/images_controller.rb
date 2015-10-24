@@ -3,12 +3,13 @@ class ImagesController < ApplicationController
   end
 
   def index
+    render :index
   end
 
   def generate
     image_url = "public/uploads/faces/jgz.jpg"
-    text = "喂？是120吗？\n我太帅了睡不着怎么办？"
-    image_bit = ImageGenerator.generate(image_url, text)
-    render :index
+    text = "喂？是120吗？\n我太帅睡不着怎么办？"
+    ImageGenerator.generate(image_url, text)
+    redirect_to images_path
   end
 end
