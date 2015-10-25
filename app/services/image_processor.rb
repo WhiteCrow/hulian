@@ -3,7 +3,7 @@ require "tempfile"
 
 class ImageProcessor
   def self.caption_image(base_image, caption, user=nil)
-    img = Magick::Image.read(base_image.image.url).first
+    img = Magick::Image.read(base_image.image.path).first
 
     draw = Magick::Draw.new
     draw.align = Magick::CenterAlign
@@ -20,10 +20,11 @@ class ImageProcessor
     tempfile = Tempfile.new(["processed_image", ".gif"])
     img.write(tempfile.path)
 
-    uploader = ImageUploader.new
-    uploader.store!(tempfile)
+    captioned.image = tempfile
+    captioned.save!
 
-    captioned.image = uploader
+    tempfile.close
+    tempfile.unlink
 
     return captioned
   end
