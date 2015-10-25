@@ -1,2 +1,10 @@
-- 3.times.each do
-  = image_tag "/uploads/captioned_images/test.jpg", class: "imgbox"
+- BaseImage.all.each do |img|
+  .img-wrap
+    .border-bar
+      .title.pull-left BigDou
+      .pull-right.small 1天前
+    .img-inner
+      = image_tag img.image.url, class: "imgbox"
+    .border-bar
+      = image_tag "like-h.png"
+      = image_tag "fa-h.png"

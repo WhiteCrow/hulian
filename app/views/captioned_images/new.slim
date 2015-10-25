@@ -1,0 +1,10 @@
+= image_tag @base_image.image.url
+- @captions.first(4).each do |caption|
+  span
+    p
+      = caption.line1
+    - if caption.line2.present?
+      p
+        = caption.line2
+
+
