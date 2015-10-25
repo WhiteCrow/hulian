@@ -17,7 +17,7 @@ class CaptionedImagesController < ApplicationController
 
   def discard
     CaptionedImage.find(params[:id]).destroy!
-    redirect_to :base_images
+    redirect_to new_captioned_image_path(base_image_id: params[:base_image_id])
   end
 
   def show

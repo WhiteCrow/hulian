@@ -4,6 +4,6 @@
   .publish
     span.publish-text 发布
 
-= link_to discard_captioned_image_path(@captioned_image), method: :delete do
+= link_to discard_captioned_image_path(@captioned_image, base_image_id: @base_image.id), method: :delete do
   .redo
     span 重来一遍

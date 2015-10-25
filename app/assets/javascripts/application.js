@@ -21,5 +21,6 @@ Dropzone.options.newBaseImage = {
   thumbnailHeight: '512',
   complete: function() {
     $(".dropzone-previews").removeClass('hidden');
+    window.location.reload();
   }
 }

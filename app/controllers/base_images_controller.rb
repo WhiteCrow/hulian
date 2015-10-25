@@ -1,6 +1,6 @@
 class BaseImagesController < ApplicationController
   def index
-    @base_images = BaseImage.all
+    @base_images = BaseImage.all.order('created_at DESC')
   end
 
   def create
