@@ -1,9 +1,10 @@
-= image_tag '/uploads/captioned_images/test.jpg', class: 'img-circle pull-left',
-  style: "width: 100px; height: 100px;z-index: 99;position: absolute;bottom: 5px;"
+= image_tag 'user.png', class: 'img-circle pull-left',
+  style: "width: 110px; height: 110px; z-index: 99;position: absolute;bottom: 10px; left: 5px;"
 #footer
+  span.username 机智的豆子
   - if current_page?(root_path)
     = link_to base_images_path, class: "pull-right" do
-      .glyphicon.glyphicon-plus.footer-icon
+      = image_tag 'addimg.png', class: 'footer-icon'
 
   - elsif current_page?(base_images_path)
     = link_to :back, class: "pull-right" do
