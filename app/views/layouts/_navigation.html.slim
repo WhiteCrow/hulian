@@ -1,15 +1,16 @@
 / navigation styled for Bootstrap 3.0
 nav.navbar.navbar-inverse.navbar-fixed-top
   .container
-    .navbar-header
-      button.pull-left.navbar-toggle[type="button" data-toggle="collapse" data-target=".navbar-collapse"]
+    .navbar-header style="background-color: #7ec8e3; height: 60px; color: white"
+      /button.pull-left.navbar-toggle[type="button" data-toggle="collapse" data-target=".navbar-collapse"]
         span.sr-only Toggle navigation
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      = link_to '刷新', "#", class: "pull-right navbar-brand", onclick: "window.location.reload()"
+      = image_tag "menu.png", class: 'pull-left'
+      = image_tag "refresh.png", class: 'pull-right'
       .center
-        = link_to 'Home', root_path, class: 'navbar-brand logo'
+        = link_to '糊脸', root_path, class: 'navbar-brand logo'
     .collapse.navbar-collapse
       ul.nav.navbar-nav
         /== render 'layouts/navigation_links'

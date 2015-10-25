@@ -8,7 +8,7 @@ gem 'jbuilder', '~> 2.0'
 # Pretty ruby objects with style
 gem 'awesome_print', require: 'ap'
 # Profiler
-gem 'rack-mini-profiler'
+# gem 'rack-mini-profiler'
 gem 'carrierwave'
 group :development, :test do
   gem 'byebug'
