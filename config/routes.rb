@@ -6,8 +6,6 @@ Rails.application.routes.draw do
   resources :base_images
   resources :captioned_images do
     get :preview, on: :collection
-  end
-  resources :images, only: [:show, :index] do
-    get :generate, on: :collection
+    delete :discard, on: :member
   end
 end

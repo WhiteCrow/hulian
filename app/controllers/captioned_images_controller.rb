@@ -16,7 +16,7 @@ class CaptionedImagesController < ApplicationController
   end
 
   def discard
-    CaptionedImage.find(param[:id]).destroy!
+    CaptionedImage.find(params[:id]).destroy!
     redirect_to :base_images
   end
 

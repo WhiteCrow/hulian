@@ -1,5 +1,9 @@
 = image_tag 'block.png', class: 'captioning-img-bg'
 = image_tag @captioned_image.image.url, class: 'captioning-img'
 = link_to root_path do
-  = image_tag 'btn-yes.png'
-  span.publish-text 发布
+  .publish
+    span.publish-text 发布
+
+= link_to discard_captioned_image_path(@captioned_image), method: :delete do
+  .redo
+    span 重来一遍
