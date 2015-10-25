@@ -134,3 +134,45 @@ html,body {
   padding: 0px;
   border: 1px solid #999;
 }
+.captioning-img-bg{
+  max-width: 100%
+}
+.captioning-img{
+  position: absolute;
+  top: 120px;
+  left: 22%;
+  width: 56%;
+}
+.caption{
+  width: 230px;
+  background-repeat: no-repeat;
+  height: 130px;
+  background-size: 230px;
+  margin-left: 10px;
+}
+#caption1{
+  background-image: url('/assets/dialg01.png')
+}
+#caption2{
+  background-image: url('/assets/dialg02.png')
+}
+#caption3{
+  background-image: url('/assets/dialg03.png')
+}
+#caption4{
+  background-image: url('/assets/dialg04.png')
+}
+.caption-text{
+  font-size: 20px;
+  color: #73502e;
+  font-weight: bold;
+  margin-left: 22px;
+  &.oneline{
+    margin-top: 60px;
+  }
+  &.twoline{
+    margin-top: 40px;
+  }
+}
+
+
