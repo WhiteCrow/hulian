@@ -1,7 +1,8 @@
+.h10
 .rows
-  .dropzone-previews.col-xs-4.hidden
+  .dropzone-previews.col-xs-4.hidden.base_img_box
   - @base_images.each do |img|
-    .col-xs-4
+    .col-xs-4.base_img_box
       = link_to new_captioned_image_path(base_image_id: img.id) do
         = image_tag img.image.url
 

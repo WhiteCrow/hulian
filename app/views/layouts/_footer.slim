@@ -8,10 +8,10 @@
 
   - elsif current_page?(base_images_path)
     = link_to :back, class: "pull-right" do
-      .glyphicon.glyphicon-arrow-left.footer-icon
+      = image_tag 'back.png', class: 'footer-icon'
 
     = form_for BaseImage.new, url: base_images_path, remote: true, html: {class: 'dropzone pull-right'} do |f|
       .fallback
         = f.file_field :image, value: 'test'
       .dz-message
-        .glyphicon.glyphicon-picture.footer-icon
+        = image_tag 'imgupload.png', class: 'footer-icon'
