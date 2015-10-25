@@ -5,11 +5,11 @@
   - if current_page?(root_path)
     = link_to base_images_path, class: "pull-right" do
       = image_tag 'addimg.png', class: 'footer-icon'
-
-  - elsif current_page?(base_images_path)
+  - else
     = link_to :back, class: "pull-right" do
       = image_tag 'back.png', class: 'footer-icon'
 
+  - if current_page?(base_images_path)
     = form_for BaseImage.new, url: base_images_path, remote: true, html: {class: 'dropzone pull-right'} do |f|
       .fallback
         = f.file_field :image, value: 'test'

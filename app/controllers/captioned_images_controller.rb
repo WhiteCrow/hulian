@@ -19,4 +19,9 @@ class CaptionedImagesController < ApplicationController
     CaptionedImage.find(param[:id]).destroy!
     redirect_to :base_images
   end
+
+  def show
+    @base_image = BaseImage.find(params[:id])
+    #@captioned_image = CaptionedImage.find(params[:id])
+  end
 end
