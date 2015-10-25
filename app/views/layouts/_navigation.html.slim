@@ -8,7 +8,7 @@ nav.navbar.navbar-inverse.navbar-fixed-top
         span.icon-bar
         span.icon-bar
       = image_tag "menu.png", class: 'pull-left'
-      = image_tag "refresh.png", class: 'pull-right'
+      = image_tag "refresh.png", class: 'pull-right', onclick: 'window.location.reload();'
       .center
         = link_to '糊脸', root_path, class: 'navbar-brand logo'
     .collapse.navbar-collapse
