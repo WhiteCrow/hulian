@@ -1,48 +1,15 @@
-Match
-================
+# 糊脸
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
+## 项目描述
 
-Rails Composer is open source and supported by subscribers. Please join RailsApps to support development of Rails Composer.
+自定义表情社区，支持从预设模板/配词库创建自定义表情或完全自定义图片/文字，自由创建新的自定义表情，糊你一脸。
 
-Problems? Issues?
------------
+## 团队成员
 
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
+* [白鸦](https://github.com/WhiteCrow)
+* 豆子
+* [+c](https://github.com/mojacc)
 
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
+## 产品预览
 
-If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
-
-Ruby on Rails
--------------
-
-This application requires:
-
-- Ruby 2.2.0
-- Rails 4.2.4
-
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
-
-Getting Started
----------------
-
-Documentation and Support
--------------------------
-
-Issues
--------------
-
-Similar Projects
-----------------
-
-Contributing
-------------
-
-Credits
--------
-
-License
--------
+![糊脸](https://raw.githubusercontent.com/mojacc/HackWuhan2015/master/pics/preview.jpg)
